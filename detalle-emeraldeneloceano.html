@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Julia Cano | Portfolio</title>
+    <meta name="description" content="Portfolio de Julia Cano, diseñadora web y desarrolladora frontend.">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat+Alternates:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--cabecera-->
+    <header class="site-header">
+        <div class="site-header__container">
+            <!--logo-->
+            <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+            </a>
+
+            <!---navegación-->
+            <nav class="site-header__nav" id="site-navigation" aria-label="Navegación principal">
+                <ul class="site-header__nav-list">
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="index.html#inicio" title="Ir a Inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="proyectos.html" title="Ir a Proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="sobremi.html" title="Ir a Sobre mí">
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="contacto.html" title="Ir a Contacto">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="servicios.html" title="Ir a Servicios">
+                            Servicios
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="site-header__toggle" id="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="site-navigation" aria-label="Abrir menú" title="Abrir menú">
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+            </button>
+        </div>
+    </header>
+    <!--contenido principal-->
+    <main class="site-main reveal">
+
+        <section class="detalle-proyecto">
+            <div class="detalle-proyecto__container">
+                <!--boton para volver a proyectos-->
+                <a href="proyectos.html" class="detalle-proyecto__volver" title="volver a página de proyectos">← Volver
+                    a proyectos</a>
+
+                <!--contenedor con imagen principal y descripción del proyecto-->
+                <div class="detalle-proyecto__top">
+                    <div class="detalle-proyecto__hero">
+                        <picture class="detalle-proyecto__hero-media">
+                            <source srcset="img/webp/emeraldeneloceano/collage.webp" type="image/webp">
+                            <img src="img/jpg/emeraldeneloceano/collage.jpg" alt="emerald en el océano"
+                                class="detalle-proyecto__hero-image" loading="lazy">
+                        </picture>
+                    </div>
+
+                    <!--descripción del proyecto-->
+                    <div class="detalle-proyecto__intro">
+                        <p class="detalle-proyecto__categoria">Maquetación - Ilustración</p>
+                        <h1 class="detalle-proyecto__titulo">Emerald en el Océano</h1>
+                        <p class="detalle-proyecto__meta">· 2024 ·</p>
+
+                        <div class="detalle-proyecto__descripcion">
+                            <p>
+                                Este proyecto va a consistir en explorar las posibilidades que el collage puede darnos
+                                para inspirarnos a la hora de ilustrar. Comenzamos haciendo a diferentes personajes
+                                jugando con recortes de revistas y viendo que opciones tenemos para crear. Nuestro
+                                personaje va a ser este gato algo humanizado que se encuentra en el océano. Lo
+                                conseguido con esta técnica, es tener una imagen original en la que inspirarnos para
+                                ilustrar y crear un personaje que va a darle protagonismo a la camisa de un libro. En
+                                este caso el libro es ficticio, lo haremos así para ver cómo es la aplicación de esta
+                                técnica creativa en el diseño editorial de portadas o camisas para libros. Si fuera un
+                                encargo real, se buscarían recortes de diferentes imágenes que acompañaran la temática
+                                del libro y la propia trama de éste. De esta forma podríamos experimentar con las
+                                diferentes opciones que el contenido nos ofrece y no caer en lo recurrente, dándole a
+                                nuestro diseño un toque de originalidad.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--seccion galería-->
+                <section class="detalle-galeria" aria-labelledby="galeria-titulo">
+                    <div class="detalle-galeria__cabecera">
+                        <h2 class="detalle-galeria__titulo" id="galeria-titulo">Galería del proyecto</h2>
+                        <p class="detalle-galeria__texto">Selección de imágenes del proceso y resultado final.</p>
+                    </div>
+
+                    <!--primera fila galería-->
+                    <div class="detalle-galeria__grid">
+                        <a href="img/jpg/emeraldeneloceano/diseñocamisa.jpg" class="detalle-galeria__item" data-index="0"
+                            title="abrir imagen">
+                            <picture>
+                                <source srcset="img/webp/emeraldeneloceano/diseñocamisa.webp" type="image/webp">
+                                <img src="img/jpg/emeraldeneloceano/diseñocamisa.jpg" alt="diseño camisa"
+                                    class="detalle-galeria__imagen" loading="lazy">
+                            </picture>
+                        </a>
+
+                        <a href="img/jpg/emeraldeneloceano/Ilustración.jpg" class="detalle-galeria__item" data-index="1"
+                            title="abrir imagen">
+                            <picture>
+                                <source srcset="img/webp/emeraldeneloceano/Ilustración.webp" type="image/webp">
+                                <img src="img/jpg/emeraldeneloceano/Ilustración.jpg" alt="ilustración"
+                                    class="detalle-galeria__imagen" loading="lazy">
+                            </picture>
+                        </a>
+
+                        <a href="img/jpg/emeraldeneloceano/resultadofinal.jpg" class="detalle-galeria__item" data-index="2"
+                            title="abrir imagen">
+                            <picture>
+                                <source srcset="img/webp/emeraldeneloceano/resultadofinal.webp" type="image/webp">
+                                <img src="img/jpg/emeraldeneloceano/resultadofinal.jpg" alt="resultado final"
+                                    class="detalle-galeria__imagen" loading="lazy">
+                            </picture>
+                        </a>
+                    </div>
+                </section>
+
+
+
+    </main>
+    <!--lightbox galería-->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__cerrar" type="button" aria-label="Cerrar lightbox">×</button>
+
+        <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Imagen anterior">
+            ←
+        </button>
+
+        <div class="lightbox__contenido">
+            <img src="" alt="" class="lightbox__imagen" id="lightbox-image">
+        </div>
+
+        <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Siguiente imagen">
+            →
+        </button>
+    </div>
+
+    <!---footer-->
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__columna">
+                <div class="footer__logo">
+                    <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                        <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+                    </a>
+                </div>
+                <p>Espacio creativo, donde las ideas cobran forma y los proyectos exploran nuevos caminos.</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo"><a href="contacto.html" title="ir a contacto">Contacto</a></h3>
+                <p>+34 601 429 074</p>
+                <p>canocriadoj@gmail.com</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo">Redes</h3>
+                <p><a href="https://www.instagram.com/" target="_blank" title="abrir instagram"
+                        rel="noreferrer">Instagram</a></p>
+                <p><a href="https://www.behance.net/" target="_blank" title="abrir behance" rel="noreferrer">Behance</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

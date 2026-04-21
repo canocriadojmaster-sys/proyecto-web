@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Julia Cano | Portfolio</title>
+    <meta name="description" content="Portfolio de Julia Cano, diseñadora web y desarrolladora frontend.">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat+Alternates:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__container">
+            <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+            </a>
+
+            <nav class="site-header__nav" id="site-navigation" aria-label="Navegación principal">
+                <ul class="site-header__nav-list">
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="index.html#inicio" title="Ir a Inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="proyectos.html" title="Ir a Proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="sobremi.html" title="Ir a Sobre mí">
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="contacto.html" title="Ir a Contacto">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="servicios.html" title="Ir a Servicios">
+                            Servicios
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="site-header__toggle" id="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="site-navigation" aria-label="Abrir menú" title="Abrir menú">
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main reveal">
+
+        <!-- INTRO -->
+        <section class="servicios">
+            <div class="servicios__contenedor">
+
+                <div class="servicios__intro">
+                    <p class="servicios__subtitulo">Servicios</p>
+                    <h1 class="servicios__titulo">Diseño visual y experiencias digitales con identidad</h1>
+                    <p class="servicios__texto">
+                        Desarrollo propuestas creativas que combinan diseño, sensibilidad visual y estructura digital.
+                        Cada proyecto se adapta a la esencia de la marca para construir una presencia clara, estética
+                        y funcional.
+                    </p>
+                </div>
+
+                <!-- BLOQUE DESTACADO -->
+                <div class="servicios__destacado">
+                    <div class="servicios__contenido">
+                        <p class="servicios__eyebrow">Qué puedo hacer por ti</p>
+                        <h2 class="servicios__heading">Soluciones pensadas para comunicar, conectar y diferenciar</h2>
+                        <p class="servicios__descripcion">
+                            Trabajo desde una mirada visual cuidada, con atención al detalle, a la composición y a la
+                            experiencia del usuario. El objetivo es crear piezas y espacios digitales coherentes,
+                            atractivos y alineados con cada proyecto.
+                        </p>
+                        <a href="contacto.html" class="servicios__boton" title="Ir a la página de contacto">
+                            Solicitar información
+                        </a>
+                    </div>
+
+                    <!--video-->
+                    <div class="servicios__media">
+                        <video class="servicios__video" autoplay loop muted playsinline preload="none"
+                            poster="img/servicios-poster.jpg">
+                            <source src="video/videowebm.webm" type="video/webm">
+                            <source src="video/videomp4.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de vídeo.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- TARJETAS -->
+                <section class="servicios__bloque" aria-labelledby="lista-servicios">
+                    <p class="servicios__subtitulo">Áreas</p>
+                    <h2 class="servicios__titulo-secundario" id="lista-servicios">Servicios creativos</h2>
+
+                    <div class="servicios__grid">
+                        <article class="servicio-card">
+                            <h3 class="servicio-card__titulo">Diseño web</h3>
+                            <p class="servicio-card__texto">
+                                Diseño interfaces visuales atractivas, ordenadas y adaptadas a diferentes dispositivos,
+                                cuidando la jerarquía, la composición y la experiencia de navegación.
+                            </p>
+                        </article>
+
+                        <article class="servicio-card">
+                            <h3 class="servicio-card__titulo">Identidad visual</h3>
+                            <p class="servicio-card__texto">
+                                Desarrollo propuestas visuales coherentes que ayudan a definir la personalidad de una
+                                marca y a transmitir su esencia de forma clara y reconocible.
+                            </p>
+                        </article>
+
+                        <article class="servicio-card">
+                            <h3 class="servicio-card__titulo">Dirección creativa</h3>
+                            <p class="servicio-card__texto">
+                                Planteo conceptos visuales y líneas gráficas para campañas, proyectos editoriales o
+                                presentaciones digitales con una visión estética unificada.
+                            </p>
+                        </article>
+
+                        <article class="servicio-card">
+                            <h3 class="servicio-card__titulo">Contenido visual</h3>
+                            <p class="servicio-card__texto">
+                                Creo piezas visuales para redes, presentaciones y soportes digitales, buscando
+                                equilibrio entre narrativa, diseño y funcionalidad.
+                            </p>
+                        </article>
+
+                        <article class="servicio-card">
+                            <h3 class="servicio-card__titulo">Maquetación responsive</h3>
+                            <p class="servicio-card__texto">
+                                Construyo páginas adaptables y limpias, pensadas para verse correctamente en móvil,
+                                tablet y escritorio sin perder coherencia visual.
+                            </p>
+                        </article>
+
+                        <article class="servicio-card">
+                            <h3 class="servicio-card__titulo">Diseño personalizado</h3>
+                            <p class="servicio-card__texto">
+                                Cada proyecto se desarrolla desde cero, evitando soluciones genéricas y dando prioridad
+                                a una identidad propia y diferenciada.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- PROCESO -->
+                <section class="servicios-proceso" aria-labelledby="proceso-trabajo">
+                    <div class="servicios-proceso__cabecera">
+                        <p class="servicios__subtitulo">Proceso</p>
+                        <h2 class="servicios__titulo-secundario" id="proceso-trabajo">Cómo trabajo</h2>
+                    </div>
+
+                    <div class="servicios-proceso__grid">
+                        <article class="proceso-card">
+                            <span class="proceso-card__paso">01</span>
+                            <h3 class="proceso-card__titulo">Idea</h3>
+                            <p class="proceso-card__texto">
+                                Escucho las necesidades del proyecto y defino una base conceptual clara.
+                            </p>
+                        </article>
+
+                        <article class="proceso-card">
+                            <span class="proceso-card__paso">02</span>
+                            <h3 class="proceso-card__titulo">Diseño</h3>
+                            <p class="proceso-card__texto">
+                                Desarrollo la propuesta visual cuidando estilo, estructura y coherencia.
+                            </p>
+                        </article>
+
+                        <article class="proceso-card">
+                            <span class="proceso-card__paso">03</span>
+                            <h3 class="proceso-card__titulo">Resultado</h3>
+                            <p class="proceso-card__texto">
+                                Entrego una solución funcional y estética pensada para comunicar con fuerza.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <!---footer-->
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__columna">
+                <div class="footer__logo">
+                    <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                        <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+                    </a>
+                </div>
+                <p>Espacio creativo, donde las ideas cobran forma y los proyectos exploran nuevos caminos.</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo"><a href="contacto.html" title="ir a contacto">Contacto</a></h3>
+                <p>+34 601 429 074</p>
+                <p>canocriadoj@gmail.com</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo">Redes</h3>
+                <p><a href="https://www.instagram.com/" target="_blank" title="abrir instagram"
+                        rel="noreferrer">Instagram</a></p>
+                <p><a href="https://www.behance.net/" target="_blank" title="abrir behance" rel="noreferrer">Behance</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

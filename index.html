@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Julia Cano | Portfolio</title>
+    <meta name="description" content="Portfolio de Julia Cano, diseñadora web y desarrolladora frontend.">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat+Alternates:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__container">
+            <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+            </a>
+
+            <nav class="site-header__nav" id="site-navigation" aria-label="Navegación principal">
+                <ul class="site-header__nav-list">
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="index.html#inicio" title="Ir a Inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="proyectos.html" title="Ir a Proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="sobremi.html" title="Ir a Sobre mí">
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="contacto.html" title="Ir a Contacto">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="servicios.html" title="Ir a Servicios">
+                            Servicios
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="site-header__toggle" id="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="site-navigation" aria-label="Abrir menú" title="Abrir menú">
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main reveal">
+        <!-- hero -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero__background" aria-hidden="true"></div>
+
+            <div class="hero__container">
+                <p class="hero__eyebrow">Portfolio creativo</p>
+
+                <h1 class="hero__title" id="hero-title">
+                    Forma, idea y proceso
+                </h1>
+
+                <p class="hero__text">
+                    Bienvenidx a este espacio creativo, donde las ideas
+                    cobran forma y los proyectos exploran nuevos caminos.
+                </p>
+
+                <a class="hero__button" href="proyectos.html" title="Ver proyectos">
+                    Ver proyectos
+                </a>
+            </div>
+        </section>
+
+        <!-- Slider de proyectos -->
+        <section class="slider-proyectos" aria-labelledby="slider-proyectos-titulo">
+            <div class="slider-proyectos__contenedor">
+
+                <div class="slider-proyectos__cabecera">
+                    <p class="slider-proyectos__eyebrow">Selección</p>
+                    <h2 class="slider-proyectos__titulo" id="slider-proyectos-titulo">
+                        Proyectos destacados
+                    </h2>
+                    <p class="slider-proyectos__descripcion">
+                        Una selección de trabajos donde conviven concepto, sensibilidad visual y desarrollo web.
+                    </p>
+                </div>
+
+                <div class="slider-proyectos__slider">
+
+                    <button class="slider-proyectos__flecha slider-proyectos__flecha--anterior" type="button"
+                        aria-label="Ver proyecto anterior">
+                        ←
+                    </button>
+
+                    <div class="slider-proyectos__viewport">
+                        <div class="slider-proyectos__pista" id="slider-pista">
+
+                            <article class="slider-proyectos__slide">
+                                <picture>
+                                    <source srcset="img/webp/invitaciondeboda/mockupboda2.webp" type="image/webp">
+                                    <img src="img/proyecto1.jpg" alt="Invitación para boda" loading="lazy" width="1200"
+                                        height="800">
+                                </picture>
+
+                                <div class="slider-proyectos__contenido">
+                                    <h3 class="slider-proyectos__nombre">Invitación para boda</h3>
+                                    <p class="slider-proyectos__texto">
+                                        Diseño de invitación nupcial con ilustración botánica personalizada.
+                                    </p>
+                                    <a href="detalle-invitaciondeboda.html" class="slider-proyectos__boton">Ver más</a>
+                                </div>
+                            </article>
+
+                            <article class="slider-proyectos__slide">
+                                <picture>
+                                    <source srcset="img/webp/unregaloespecial/foto2.webp" type="image/webp">
+                                    <img src="img/jpg//unregaloespecial/foto2.jpg" alt="Proyecto 2" loading="lazy"
+                                        width="1200" height="800">
+                                </picture>
+
+                                <div class="slider-proyectos__contenido">
+                                    <h3 class="slider-proyectos__nombre">Un regalo especial</h3>
+                                    <p class="slider-proyectos__texto">
+                                        Diseño de packaging artesanal y efímero.
+                                    </p>
+                                    <a href="detalle-regalo.html" class="slider-proyectos__boton">Ver más</a>
+                                </div>
+                            </article>
+
+                            <article class="slider-proyectos__slide">
+                                <picture>
+                                    <source srcset="img/webp/jimenezrosales/diseñofinal.webp" type="image/webp">
+                                    <img src="img/jpg/jimenezrosales/diseñofinal.jpg" alt="Proyecto 3" loading="lazy"
+                                        width="1200" height="800">
+                                </picture>
+
+                                <div class="slider-proyectos__contenido">
+                                    <h3 class="slider-proyectos__nombre">Jiménez Rosales</h3>
+                                    <p class="slider-proyectos__texto">
+                                        Rediseño de identidad y packaging para una granja avícola situada en Sevilla.
+                                    </p>
+                                    <a href="detalle-jimenezrosales.html" class="slider-proyectos__boton">Ver más</a>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+
+                    <button class="slider-proyectos__flecha slider-proyectos__flecha--siguiente" type="button"
+                        aria-label="Ver siguiente proyecto">
+                        →
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!---footer-->
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__columna">
+                <div class="footer__logo">
+                    <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                        <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+                    </a>
+                </div>
+                <p>Espacio creativo, donde las ideas cobran forma y los proyectos exploran nuevos caminos.</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo"><a href="contacto.html" title="ir a contacto">Contacto</a></h3>
+                <p>+34 601 429 074</p>
+                <p>canocriadoj@gmail.com</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo">Redes</h3>
+                <p><a href="https://www.instagram.com/" target="_blank" title="abrir instagram" rel="noreferrer">Instagram</a></p>
+                <p><a href="https://www.behance.net/" target="_blank" title="abrir behance" rel="noreferrer">Behance</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Julia Cano | Portfolio</title>
+    <meta name="description" content="Portfolio de Julia Cano, diseñadora web y desarrolladora frontend.">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat+Alternates:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__container">
+            <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+            </a>
+
+            <nav class="site-header__nav" id="site-navigation" aria-label="Navegación principal">
+                <ul class="site-header__nav-list">
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="index.html#inicio" title="Ir a Inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="proyectos.html" title="Ir a Proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="sobremi.html" title="Ir a Sobre mí">
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="contacto.html" title="Ir a Contacto">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="servicios.html" title="Ir a Servicios">
+                            Servicios
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="site-header__toggle" id="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="site-navigation" aria-label="Abrir menú" title="Abrir menú">
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main reveal">
+        <section class="sobremi">
+            <div class="sobremi__contenedor">
+
+                <div class="sobremi__texto">
+                    <p class="sobremi__subtitulo">Sobre la creadora</p>
+
+                    <h2 class="sobremi__titulo">¡Hola!</h2>
+
+                    <p class="sobremi__descripcion">
+                        Mi nombre es Julia y soy diseñadora gráfica con base en Sevilla. Concibo el diseño como un
+                        territorio de exploración constante, un espacio donde lo visual se construye a partir de la
+                        curiosidad, la observación y la experimentación. Este portfolio reúne una selección de mis
+                        proyectos más creativos y personales, trabajos que nacen sin un brief cerrado y que me permiten
+                        investigar, probar y desarrollar ideas desde una perspectiva más libre e intuitiva.
+                    </p>
+
+                    <button class="sobremi__boton" id="botonValores">
+                        Áreas de especialización
+                    </button>
+
+                    <ul class="sobremi__valores oculto" id="listaValores">
+                        <li>Maquetación</li>
+                        <li>Branding</li>
+                        <li>Ilustración</li>
+                    </ul>
+
+                </div>
+
+                <picture class="sobremi__imagen">
+                    <source srcset="img/webp/sobremi.webp" type="image/webp">
+                    <img src="img/jpg/sobremi.jpg" alt="Fotografia de Julia Cano" loading="lazy">
+                </picture>
+
+            </div>
+        </section>
+    </main>
+
+    <!---footer-->
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__columna">
+                <div class="footer__logo">
+                    <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                        <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+                    </a>
+                </div>
+                <p>Espacio creativo, donde las ideas cobran forma y los proyectos exploran nuevos caminos.</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo"><a href="contacto.html" title="ir a contacto">Contacto</a></h3>
+                <p>+34 601 429 074</p>
+                <p>canocriadoj@gmail.com</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo">Redes</h3>
+                <p><a href="https://www.instagram.com/" target="_blank" title="abrir instagram" rel="noreferrer">Instagram</a></p>
+                <p><a href="https://www.behance.net/" target="_blank" title="abrir behance" rel="noreferrer">Behance</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

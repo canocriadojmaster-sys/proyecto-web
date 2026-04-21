@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <!-- Metadatos básicos del documento -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Información SEO principal -->
+    <title>Julia Cano | Portfolio</title>
+    <meta name="description" content="Portfolio de Julia Cano, diseñadora web y desarrolladora frontend.">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat+Alternates:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--cabecera-->
+    <header class="site-header">
+        <div class="site-header__container">
+            <!--logo-->
+            <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+            </a>
+
+            <!---navegación-->
+            <nav class="site-header__nav" id="site-navigation" aria-label="Navegación principal">
+                <ul class="site-header__nav-list">
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="index.html#inicio" title="Ir a Inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="proyectos.html" title="Ir a Proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="sobremi.html" title="Ir a Sobre mí">
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="contacto.html" title="Ir a Contacto">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a class="site-header__nav-link" href="servicios.html" title="Ir a Servicios">
+                            Servicios
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="site-header__toggle" id="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="site-navigation" aria-label="Abrir menú" title="Abrir menú">
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+                <span class="site-header__toggle-line"></span>
+            </button>
+        </div>
+    </header>
+ <!--contrenido principal-->
+    <main class="site-main reveal">
+
+        <!---proyectos-->
+        <section class="catalogo aparecer">
+            <div class="catalogo__contenedor">
+                <p class="catalogo__subtitulo">Colección completa</p>
+                <h1 class="catalogo__titulo">Proyectos</h1>
+                <p class="catalogo__texto">
+                    «En mis proyectos exploro el diseño desde una perspectiva más libre y personal.
+                    Son piezas que surgen de la curiosidad, la investigación visual y la necesidad de
+                    experimentar sin un brief cerrado. Aquí el proceso es tan importante como el resultado».
+
+                </p>
+
+
+                <!--filtro-->
+                <div class="filtro">
+                    <button class="filtro__btn activo" data-filter="todo" title="ver todo">Todo</button>
+                    <button class="filtro__btn" data-filter="carteleria" title="ver carteles">Cartelería</button>
+                    <button class="filtro__btn" data-filter="identidad" title="ver identidad">Identidad visual</button>
+                    <button class="filtro__btn" data-filter="ilustracion" title="ver ilustraciones">Ilustración</button>
+                    <button class="filtro__btn" data-filter="maquetacion" title="ver maquetación">Maquetación</button>
+                    <button class="filtro__btn" data-filter="packaging" title="ver packaging">Packaging</button>
+                </div>
+
+                <!--grid de proyectos-->
+                <div class="catalogo__grid">
+
+                    <!--proyectos-->
+
+                    <a href="detalle-invitaciondeboda.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="ilustracion maquetacion">
+                            <picture>
+                                <source srcset="img/webp/invitaciondeboda/mockupboda2.webp" type="image/webp">
+                                <img src="img/jpg/invitaciondeboda/mockupboda2.jpg" alt="invitacion boda"
+                                    class="poster__imagen" loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">Invitación para boda</h3>
+                            <p class="poster__descripcion">Diseño de invitación nupcial con ilustración botánica
+                                personalizada.</p>
+                        </article>
+                    </a>
+
+                    <a href="detalle-cartelesexperimentales.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="carteleria ">
+                            <picture>
+                                <source srcset="img/webp/cartelesexperimentales/intervencion1.webp" type="image/webp">
+                                <img src="img/jpg/cartelesexperimentales/intervencion1.jpg" alt="foto de intervencion"
+                                    class="poster__imagen" loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">Carteles experimentales</h3>
+                            <p class="poster__descripcion">Investigación visual basada en la intervención de fotografía.
+                            </p>
+                        </article>
+                    </a>
+
+                    <a href="detalle-tarjetasdevisita.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="ilustracion identidad">
+                            <picture>
+                                <source srcset="img/webp/tarjetasdevisita/mockup.webp" type="image/webp">
+                                <img src="img/jpg/tarjetasdevisita/mockup.jpg" alt="tarjetas de visita"
+                                    class="poster__imagen" loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">Tarjetas de visita</h3>
+                            <p class="poster__descripcion">Identidad visual y diseño de papelería profesional para
+                                psiconutrición.</p>
+                        </article>
+                    </a>
+
+                    <a href="detalle-articulosilencio.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="maquetacion ilustracion">
+                            <picture>
+                                <source srcset="img/webp/articulosilencio/ilustracionprincipal.webp" type="image/webp">
+                                <img src="img/jpg/articulosilencio/ilustracionprincipal.jpg" alt="ilustracion"
+                                    class="poster__imagen" loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">Artículo silencio</h3>
+                            <p class="poster__descripcion">Uso de la metáfora como eje conceptual para la ilustración.
+                            </p>
+                        </article>
+                    </a>
+
+                    <a href="detalle-lahabitacion.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="carteleria">
+                            <picture>
+                                <source srcset="img/webp/lahabitacion/boceto1.webp" type="image/webp">
+                                <img src="img/jpg/lahabitacion/boceto1.jpg" alt="boceto" class="poster__imagen"
+                                    loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">La habitación</h3>
+                            <p class="poster__descripcion">Exploración tipográfica que utiliza la perspectiva y el
+                                concepto del cubo.</p>
+                        </article>
+                    </a>
+
+
+
+                    <a href="detalle-bcn.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="carteleria identidad">
+                            <picture>
+                                <source srcset="img/webp/bcnfest/bcnpsychfest.webp" type="image/webp">
+                                <img src="img/jpg/bcnfest/bcnpsychfest.jpg" alt="diseño" class="poster__imagen"
+                                    loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">Bcn Psy Fest</h3>
+                            <p class="poster__descripcion">Identidad visual basada en la nostalgia de los años 60.</p>
+                        </article>
+                    </a>
+
+                    <a href="detalle-regalo.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="packaging">
+                            <picture>
+                                <source srcset="img/webp/unregaloespecial/foto1.webp" type="image/webp">
+                                <img src="img/jpg/unregaloespecial/foto1.jpg" alt="fotografia packaging"
+                                    class="poster__imagen" loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">Un regalo especial</h3>
+                            <p class="poster__descripcion">Diseño de packaging artesanal y efímero, un encargo para un regalo especial.</p>
+                        </article>
+                    </a>
+
+                    <a href="detalle-jimenezrosales.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="identidad ilustracion packaging">
+                            <picture>
+                                <source srcset="img/webp/jimenezrosales/diseñofinal.webp" type="image/webp">
+                                <img src="img/jpg/jimenezrosales/diseñofinal.jpg" alt="foto producto final"
+                                    class="poster__imagen" loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">Jiménez Rosales</h3>
+                            <p class="poster__descripcion">Rediseño de identidad y packaging para una granja avícola sevillana.</p>
+                        </article>
+                    </a>
+
+                    
+                    <a href="detalle-emeraldeneloceano.html" class="poster__enlace" title="ver detalles">
+                        <article class="poster" data-category="maquetacion ilustracion">
+                            <picture>
+                                <source srcset="img/webp/emeraldeneloceano/collage.webp" type="image/webp">
+                                <img src="img/jpg/emeraldeneloceano/collage.jpg" alt="collage"
+                                    class="poster__imagen" loading="lazy">
+                            </picture>
+                            <h3 class="poster__nombre">Emerald en el Océano</h3>
+                            <p class="poster__descripcion">Recurso del collage para la creación de personajes.</p>
+                        </article>
+                    </a>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!---footer-->
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__columna">
+                <div class="footer__logo">
+                    <a class="site-header__logo" href="index.html" title="Ir al inicio">
+                        <img src="img/logo.svg" alt="logo del sitio" class="site-header__logo-svg">
+                    </a>
+                </div>
+                <p>Espacio creativo, donde las ideas cobran forma y los proyectos exploran nuevos caminos.</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo"><a href="contacto.html" title="ir a contacto">Contacto</a></h3>
+                <p>+34 601 429 074</p>
+                <p>canocriadoj@gmail.com</p>
+            </div>
+
+            <div class="footer__columna">
+                <h3 class="footer__titulo">Redes</h3>
+                <p><a href="https://www.instagram.com/" target="_blank" title="abrir instagram" rel="noreferrer">Instagram</a></p>
+                <p><a href="https://www.behance.net/" target="_blank" title="abrir behance" rel="noreferrer">Behance</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
